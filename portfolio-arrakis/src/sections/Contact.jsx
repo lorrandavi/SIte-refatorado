@@ -6,10 +6,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative bg-arrakis-deep border-t border-arrakis-gold/20 p-12 text-center overflow-hidden mb-0">
         
-        {/* ELEMENTO DECORATIVO: Círculo Giratório 
-            Nota: 'animate-spin-slow' deve estar configurado no tailwind.config.js 
-            conforme fizemos na Fase 1.
-        */}
+        {/* ELEMENTO DECORATIVO: Círculo Giratório*/}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border border-arrakis-gold/10 rounded-full animate-spin-slow pointer-events-none"></div>
 
         <div className="relative z-10">

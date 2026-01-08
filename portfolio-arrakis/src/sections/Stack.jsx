@@ -12,7 +12,6 @@ export default function Stack() {
           <Card key={index} className="hover:border-opacity-50 h-full">
             
             {/* Ícone de fundo (Absolute) */}
-            {/* Nota: Usamos style={{ color: ... }} para garantir que a cor funcione sem depender do safelist do Tailwind */}
             <div className="absolute top-0 right-0 p-4 opacity-20 group-hover:opacity-100 transition-opacity">
                <i className={`${item.icon} text-4xl text-${item.colorToken.split('-')[1] === 'spice' ? 'arrakis-spice' : item.colorToken.split('-')[1] === 'eyes' ? 'arrakis-eyes' : 'arrakis-gold'}`}></i>
             </div>
@@ -26,8 +25,6 @@ export default function Stack() {
                 <li key={idx} className="flex items-center gap-3">
                   {/* Quadrado colorido decorativo */}
                   <span className={`w-1.5 h-1.5 bg-${item.colorToken.replace('arrakis-', 'arrakis-')}`}></span> 
-                  {/* Fallback de segurança: Se a classe dinâmica falhar, o CSS base segura. 
-                      Mas para simplificar, usarei uma lógica direta de classes abaixo para garantir. */}
                   <span>{skill}</span>
                 </li>
               ))}
