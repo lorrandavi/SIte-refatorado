@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Botões de Ação */}
       <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
         <Button href="#projects" variant="primary">Ver Projetos</Button>
-        <Button href="https://linkedin.com" target="_blank" variant="secondary">LinkedIn</Button>
+        <Button href="https://linkedin.com/in/lorran-azarany" target="_blank" variant="secondary">LinkedIn</Button>
       </div>
     </section>
   );
